@@ -11,5 +11,6 @@
 <img src="img/1.svg"/><hr>
 <a href="input_data">input_data</a><br/>
 <a href="read_data">read_data</a><br/>
+<a href="login_form">LogIn</a>
 </body>
 </html>
