@@ -30,8 +30,14 @@ public class TestController {
 	}
 	
 	@GetMapping("/delete")
-	public String delete(@RequestParam String user_id, @ModelAttribute LoginDTO dto) {
-		sessionTemplate.delete("test_db.delete_data", user_id);
+	public String delete(@RequestParam String user_id) {//user_id: kim
+		sessionTemplate.delete("test_db.delete1", user_id);
+		return "result";
+	}
+	
+	@GetMapping("/update")
+	public String update(@RequestParam String user_id) {
+		sessionTemplate.update("test_db.update_data", user_id);
 		return "result";
 	}
 }
