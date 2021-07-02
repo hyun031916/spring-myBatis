@@ -7,7 +7,7 @@
  <insert id="insert_data" parameterType="kr.hs.study.model.dto.LoginDTO">
  	insert into login(user_id, user_pass) values(#{user_id},#{user_pass})
  </insert>
-  <delete id="delete1">
+  <delete id="delete_data">
  	delete from login where user_id=#{user_id}
  </delete>
  <update id="update_data">
