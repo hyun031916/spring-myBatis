@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>DB 변동 결과</title>
 </head>
 <body>
-저장됨
+저장되었습니다.
 </body>
 </html>
