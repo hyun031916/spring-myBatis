@@ -48,6 +48,7 @@
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="Book"/>
 			<item value="MyBatis2"/>
 			<item value="MyBatis"/>
 		</list>
