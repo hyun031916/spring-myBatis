@@ -153,7 +153,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\myBatis\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\MyBatis" path="/MyBatis" reloadable="true" source="org.eclipse.jst.jee.server:MyBatis"/><Context docBase="C:\myBatis\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\MyBatis2" path="/MyBatis2" reloadable="true" source="org.eclipse.jst.jee.server:MyBatis2"/><Context docBase="C:\myBatis\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Book" path="" reloadable="true" source="org.eclipse.jst.jee.server:Book"/></Host>
+      <Context docBase="C:\myBatis\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\MyBatis" path="/MyBatis" reloadable="true" source="org.eclipse.jst.jee.server:MyBatis"/><Context docBase="C:\myBatis\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\MyBatis2" path="/MyBatis2" reloadable="true" source="org.eclipse.jst.jee.server:MyBatis2"/><Context docBase="C:\myBatis\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Book" path="/Book" reloadable="true" source="org.eclipse.jst.jee.server:Book"/><Context docBase="C:\myBatis\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\Music" path="" reloadable="true" source="org.eclipse.jst.jee.server:Music"/></Host>
     </Engine>
   </Service>
 </Server>
