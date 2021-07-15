@@ -5,14 +5,16 @@
  
 <mapper namespace="music">
 	<insert id="add" parameterType="kr.hs.study.model.dto.MusicDTO">
-		insert into music(song_title, song_singer, song_genre, song_price, song_passwd, id) values(#{song_title}, #{song_singer}, #{song_genre}, #{song_price}, #{song_passwd}, id.NEXTVAL)
+		insert into music(song_title, song_singer, song_genre, song_price, song_passwd, id, song_date) values(#{song_title}, #{song_singer}, #{song_genre}, #{song_price}, #{song_passwd}, id.NEXTVAL, #{song_date})
 	</insert> 
 	
 	<!-- <delete id="delete">
 		delete from music where song_title=#{song_title}
-	</delete>
+	</delete> -->
 	
-	<select id="list" resultType="kr.hs.study.mode.dto.MusicDTO">
+	<select id="list" resultType="kr.hs.study.model.dto.MusicDTO">
 		select * from music order by id
-	</select> -->
+	</select>
+	
+	
 </mapper>   

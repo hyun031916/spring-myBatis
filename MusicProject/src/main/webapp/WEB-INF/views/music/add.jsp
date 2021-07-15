@@ -4,8 +4,7 @@
 <html>
 	<head>
 	<meta charset="UTF-8">
-	<title>Insert title here</title>
-	</head>
+	<title>음악 추가 </title>
 	<body>
 		<form method="post" action="/add">
 		  <div class="container">
@@ -24,7 +23,10 @@
 		    <input type="text" placeholder="price" name="song_price" required />
 		    
 		    <b>비밀번호(수정 삭제시 필요)</b>
-		    <input type="text" placeholder="password" name="song_passwd" required />
+		    <input type="password" placeholder="password" name="song_passwd" required />
+		    
+		    <b>발매년도</b>
+		    <input type="text" placeholder="date" name="song_date" required />
 		    
 		    <button type="submit">생성</button>
 		  </div>

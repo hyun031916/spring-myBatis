@@ -26,7 +26,9 @@
     <!-- Bean을 정의할 xml 파일을 지정한다. -->
     <context-param>
     	<param-name>contextConfigLocation</param-name>
-    	<param-value>/WEB-INF/config/root-context.xml</param-value>
+    	<param-value>
+    	/WEB-INF/config/root-context.xml
+    	</param-value>
     </context-param>
     
     <!-- 리스너설정 -->

@@ -6,6 +6,20 @@ public class MusicDTO {
 	private String song_genre;
 	private String song_price;
 	private String song_passwd;
+	private String song_date;
+	private String id;
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getSong_date() {
+		return song_date;
+	}
+	public void setSong_date(String song_date) {
+		this.song_date = song_date;
+	}
 	public String getSong_title() {
 		return song_title;
 	}

@@ -9,6 +9,8 @@
 <body>
 <h1>hi Spring MVC~</h1>
 <img src="img/1.svg"/><hr>
+	<a href="/list">À½¾Ç ¸ñ·Ï º¸±â</a>
 	<a href="/add">À½¾Ç Ãß°¡</a>
+	<a href="/search">À½¾Ç °Ë»ö</a>
 </body>
 </html>
