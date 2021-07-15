@@ -3,5 +3,16 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
  
- <mapper namespace="music">
+<mapper namespace="music">
+	<insert id="add" parameterType="kr.hs.study.model.dto.MusicDTO">
+		insert into music(song_title, song_singer, song_genre, song_price, song_passwd, id) values(#{song_title}, #{song_singer}, #{song_genre}, #{song_price}, #{song_passwd}, id.NEXTVAL)
+	</insert> 
+	
+	<!-- <delete id="delete">
+		delete from music where song_title=#{song_title}
+	</delete>
+	
+	<select id="list" resultType="kr.hs.study.mode.dto.MusicDTO">
+		select * from music order by id
+	</select> -->
 </mapper>   
