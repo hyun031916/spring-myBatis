@@ -3,14 +3,16 @@
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
  
- <mapper namespace="test_db">
- <insert id="insert_data" parameterType="kr.hs.study.model.dto.LoginDTO">
- 	insert into login(user_id, user_pass) values(#{user_id},#{user_pass})
- </insert>
-  <delete id="delete_data">
- 	delete from login where user_id=#{user_id}
- </delete>
- <update id="update_data">
- 	update login set user_pass='2222' where user_id=#{user_id}
- </update>
-</mapper>       
+<mapper namespace="music">
+	<insert id="add" parameterType="kr.hs.study.model.dto.MusicDTO">
+		insert into music(song_title, song_singer, song_genre, song_price, song_passwd, id) values(#{song_title}, #{song_singer}, #{song_genre}, #{song_price}, #{song_passwd}, id.NEXTVAL)
+	</insert> 
+	
+	<!-- <delete id="delete">
+		delete from music where song_title=#{song_title}
+	</delete>
+	
+	<select id="list" resultType="kr.hs.study.mode.dto.MusicDTO">
+		select * from music order by id
+	</select> -->
+</mapper>   

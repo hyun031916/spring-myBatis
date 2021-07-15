@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import kr.hs.study.model.dto.LoginDTO;
+import kr.hs.study.model.dto.MusicDTO;
 
 @Controller
 public class TestController {
@@ -29,6 +30,16 @@ public class TestController {
 		return "result";
 	}
 	
+	@GetMapping("/add")
+	public String add() {
+		return "music/add";
+	}
+	
+	@PostMapping("/add")
+	public String add_re(@ModelAttribute MusicDTO dto) {
+		sessionTemplate.insert("music.add", dto);
+		return "result";
+	}
 	@GetMapping("/delete")
 	public String delete(@RequestParam String user_id) {
 		//user_id: kim

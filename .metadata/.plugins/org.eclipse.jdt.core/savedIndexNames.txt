@@ -6,4 +6,3 @@ INDEX VERSION 1.131+C:\myBatis\.metadata\.plugins\org.eclipse.jdt.core
 1933908119.index
 4166524.index
 1217684601.index
-4227778342.index
