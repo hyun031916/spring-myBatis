@@ -5,6 +5,8 @@
 	<head>
 	<meta charset="UTF-8">
 	<title>음악 추가 </title>
+	<link rel="stylesheet" href="css/main.css"/>
+	</head>
 	<body>
 		<form method="post" action="/add">
 		  <div class="container">
@@ -28,7 +30,7 @@
 		    <b>발매년도</b>
 		    <input type="text" placeholder="date" name="song_date" required />
 		    
-		    <button type="submit">생성</button>
+		    <button type="submit" class="SubmitButton">생성</button>
 		  </div>
 		</form> 
 	</body>

@@ -17,8 +17,10 @@
 	</delete>
 	
 	<update id="update" parameterType="kr.hs.study.model.dto.MusicDTO">
-		update music set song_title=#{song_title}, song_singer=#{song_singer}, song_genre=#{song_genre}, song_price=#{song_price}, song_passwd=#{song_passwd}, song_date=#{song_date} where id=#{id}
+		update music set song_title=#{song_title}, song_singer=#{song_singer}, song_genre=#{song_genre}, song_price=#{song_price}, song_passwd=#{song_passwd}, song_date=#{song_date}, id=#{id} where id=#{id}
 	</update>
 	
-	
+	<select id="selectOne" resultType="kr.hs.study.model.dto.MusicDTO">
+ 		select * from music where id=#{id}
+ 	</select>
 </mapper>   

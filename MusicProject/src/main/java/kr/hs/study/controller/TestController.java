@@ -42,16 +42,16 @@ public class TestController {
 		return "music/delete";
 	}
 	
-//	@GetMapping("/delete")
-//	public String delete(@RequestParam String user_id) {
-//		//user_id: kim
-//		sessionTemplate.delete("test_db.delete_data", user_id);
-//		return "result";
-//	}
-//	
-//	@GetMapping("/update")
-//	public String update(@RequestParam String user_id) {
-//		sessionTemplate.update("test_db.update_data", user_id);
-//		return "result";
-//	}
+	@GetMapping("/modify")
+	public String update(@RequestParam int id, Model model) {
+		MusicDTO dto = sessionTemplate.selectOne("music.selectOne", id);
+		model.addAttribute("dto", dto);
+		return "music/modify";
+	}
+	
+	@PostMapping("modify")
+	public String update(MusicDTO dto) {
+		sessionTemplate.update("music.update", dto);
+		return "music/modify_result";
+	}
 }

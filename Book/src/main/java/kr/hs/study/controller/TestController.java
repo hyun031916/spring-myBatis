@@ -55,10 +55,7 @@ public class TestController {
 	@PostMapping("update")
 	public String update(BookDTO dto) {
 		sessionTemplate.update("book.update",dto);
-		
 		System.out.println("dto"+dto.getAuthor());
 		return "result";
 	}
-	
-
 }
