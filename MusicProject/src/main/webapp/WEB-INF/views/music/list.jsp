@@ -17,6 +17,7 @@
 	            <th>장르</th>
 	            <th>가격</th>
 	            <th>생산날짜</th>
+	            <th>기타</th>
 	        </tr>
 	    </thead>
 	    <tbody>
@@ -28,6 +29,7 @@
 		            <td>${name.song_genre }</td>
 		            <td>${name.song_price }</td>
 		            <td>${name.song_date }</td>
+		            <td><a href="modify">수정</a><a href="/delete?id=${name.id }">삭제</a>
 	        	</tr>
 			</c:forEach>
 	        

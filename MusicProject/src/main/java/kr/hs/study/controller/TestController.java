@@ -36,6 +36,12 @@ public class TestController {
 		return "music/list";
 	}
 	
+	@GetMapping("/delete")
+	public String delete(@RequestParam int id) {
+		sessionTemplate.delete("music.delete", id);
+		return "music/delete";
+	}
+	
 //	@GetMapping("/delete")
 //	public String delete(@RequestParam String user_id) {
 //		//user_id: kim
