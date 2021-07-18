@@ -4,11 +4,7 @@ INDEX VERSION 1.4+C:\myBatis\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexe
 1357558779.index
 811314499.index
 2295098433.index
-2984270092.index
 3778599675.index
 1901201092.index
-2447115430.index
-3864476256.index
-2447115430.index
 1933908119.index
 3857186482.index
