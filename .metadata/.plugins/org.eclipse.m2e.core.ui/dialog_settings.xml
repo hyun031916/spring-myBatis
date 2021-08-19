@@ -2,8 +2,6 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
-			<item value="C:\myBatis\Music"/>
-			<item value="C:\myBatis"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -15,7 +13,6 @@
 		</list>
 	</section>
 	<section name="MavenProjectWizardArchetypePage">
-		<item key="catalog" value="All Catalogs"/>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
@@ -47,17 +44,11 @@
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
 			<item value="kr.hs.study"/>
-			<item value="kr."/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="MusicProject"/>
-			<item value="MusicPrj"/>
-			<item value="Music"/>
-			<item value="Book"/>
-			<item value="MyBatis2"/>
-			<item value="MyBatis"/>
+			<item value="MVCProject"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -70,9 +61,5 @@
 		<list key="version">
 			<item value="0.0.1-SNAPSHOT"/>
 		</list>
-	</section>
-	<section name="org.eclipse.m2e.core.pom.overview">
-	</section>
-	<section name="org.eclipse.m2e.core.pom.dependencies">
 	</section>
 </section>
