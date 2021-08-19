@@ -51,7 +51,20 @@ public class TestController {
 	
 	@PostMapping("modify")
 	public String update(MusicDTO dto) {
+		System.out.println("dto"+dto.getId());
 		sessionTemplate.update("music.update", dto);
 		return "music/modify_result";
+	}
+	
+	@GetMapping("/search")
+	
+	public String search() {
+		return "music/search";
+	}
+	@PostMapping("search")
+	public String search(@RequestParam String song_title, Model model) {
+		List<MusicDTO> list = sessionTemplate.selectList("music.search", song_title);
+		model.addAttribute("list", list);
+		return "music/search_result";
 	}
 }

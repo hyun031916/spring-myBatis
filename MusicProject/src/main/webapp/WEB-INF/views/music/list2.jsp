@@ -5,7 +5,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>음악 목록 보기</title>
+<title>음악 검색 결과</title>
 <!--===============================================================================================-->	
 	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
 <!--===============================================================================================-->
@@ -20,6 +20,24 @@
 	<link rel="stylesheet" type="text/css" href="vendor/perfect-scrollbar/perfect-scrollbar.css">
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script type="text/javascript">
+		document.getElementById("modify_link").onclick= function(){
+			control();
+			return false;
+		}
+		
+		function control(){
+			while(true){
+				var passwd = prompt("비밀번호 입력", "password");
+				
+				if(passwd==${name.song_passwd }){
+					alert("성공!");
+				}else{
+					alert("암호가 틀립니다. 재 입력 요망");
+				}
+			}
+		}
+	</script>
 </head>
 <body>
 	<div class="limiter">
@@ -46,13 +64,13 @@
 						  		<tbody>
 								    <c:forEach var='name' items='${list }'>
 										<tr class="row100 body">
-								            <td class="cell100 column1">${name.id }</td>
-								            <td class="cell100 column2">${name.song_title }</td>
-								            <td class="cell100 column3">${name.song_singer }</td>
-								            <td class="cell100 column4">${name.song_genre }</td>
-								            <td class="cell100 column5">${name.song_price }</td>
-								            <td class="cell100 column6">${name.song_date }</td>
-								            <td class="cell100 column7"><a href="modify?id=${name.id }" >수정</a>&nbsp;<a href="/delete?id=${name.id }">삭제</a>
+								            <td class="cell100 column1">${dto.id }</td>
+								            <td class="cell100 column2">${dto.song_title }</td>
+								            <td class="cell100 column3">${dto.song_singer }</td>
+								            <td class="cell100 column4">${dto.song_genre }</td>
+								            <td class="cell100 column5">${dto.song_price }</td>
+								            <td class="cell100 column6">${dto.song_date }</td>
+								            <td class="cell100 column7"><a id="modify_link" href="modify?id=${name.id }" >수정</a>&nbsp;<a href="/delete?id=${name.id }">삭제</a>
 							        	</tr>
 									</c:forEach>
 								</tbody>

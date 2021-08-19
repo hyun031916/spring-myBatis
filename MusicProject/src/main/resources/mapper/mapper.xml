@@ -23,4 +23,7 @@
 	<select id="selectOne" resultType="kr.hs.study.model.dto.MusicDTO">
  		select * from music where id=#{id}
  	</select>
+ 	<select id = "search" resultType="kr.hs.study.model.dto.MusicDTO">
+ 		select * from music where song_title LIKE '%'||#{song_title}||'%'
+ 	</select>
 </mapper>   

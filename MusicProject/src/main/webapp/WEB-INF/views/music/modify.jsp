@@ -8,9 +8,17 @@
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="css/main.css"/>
 		<title>음악 수정</title>
+		<script type="text/javascript">
+		var password = prompt("비밀번호입력", "");
+		if(password != ${dto.song_passwd}){
+			alert("비밀번호가 틀렸습니다.");
+			location.href="list";
+		}
+		</script>
+		
 	</head>
 	<body>
-		<form method="post" action="/modify">
+		<form method="post" action="/modify?id=${dto.id }">
 		  <div class="container">
 		    <h1>음악</h1>
 		
