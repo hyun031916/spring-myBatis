@@ -1,22 +1,23 @@
-package kr.hs.study.service;
+package kr.hs.study.model.dao;
 
 import java.util.List;
 
+import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Repository;
 
-import kr.hs.study.model.dao.MemberDAO;
 import kr.hs.study.model.dto.MemberDTO;
 
-@Service
-public class MemberServiceImpl implements MemberService {
+@Repository
+public class MemberDAOImpl implements MemberDAO {
 
 	@Autowired
-	MemberDAO dao;
+	SqlSessionTemplate sqlsessiontemplate;
 	
 	public List<MemberDTO> list() {
-		List<MemberDTO> dao1=dao.list();
-		return dao1;
+		// TODO Auto-generated method stub
+		System.out.println("1");
+		return sqlsessiontemplate.selectList("member.list");
 	}
 
 	public void insert(MemberDTO dto) {

@@ -2,15 +2,13 @@
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="EUC-KR">
-		<link rel="stylesheet" href="css/main.css"/>
-		<title>음악</title>
-	</head>
-	<body>
-	<h1>hi Spring MVC~</h1>
-	<img src="img/1.svg"/><hr>
-		<a href="/gugudan">구구단</a>
-		<a href="/add">n에서 m까지의 합</a>
-	</body>
+<head>
+<meta charset="EUC-KR">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Spring MVC Project</h1>
+<img src="img/1.svg" width="150" height="100"/><hr>
+<jsp:include page="include/menu.jsp"/>
+</body>
 </html>
