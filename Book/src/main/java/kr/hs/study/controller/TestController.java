@@ -50,7 +50,7 @@ public class TestController {
 	public String update_form(@RequestParam String title, Model model) {
 		BookDTO dto=sessionTemplate.selectOne("book.selectOne",title);
 		model.addAttribute("dto", dto);
-		return "result3";
+		return "modify";
 	}
 	@PostMapping("update")
 	public String update(BookDTO dto) {
