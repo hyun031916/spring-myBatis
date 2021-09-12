@@ -11,22 +11,21 @@ import kr.hs.study.model.dto.MemberDTO;
 @Service
 public class MemberServiceImpl implements MemberService {
 
-	@Autowired
-	MemberDAO dao;
-	
-	public List<MemberDTO> list() {
-		List<MemberDTO> dao1=dao.list();
-		return dao1;
-	}
+		@Autowired
+		MemberDAO dao;
+		
+		public List<MemberDTO> list(){
+			List<MemberDTO> dao1 = dao.list();
+			return dao1;
+		}
+		public void insert(MemberDTO dto) {
+			// TODO Auto-generated method stub
 
-	public void insert(MemberDTO dto) {
-		// TODO Auto-generated method stub
+		}
 
-	}
-
-	public MemberDTO read(String userid) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
+		public MemberDTO read(String userid) {
+			// TODO Auto-generated method stub
+			return null;
+		}
 }
+
